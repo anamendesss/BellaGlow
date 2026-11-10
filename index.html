@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bella Glow: dicas de beleza, skincare, maquiagem e cabelos.">
+  <title>Bella Glow | Blog de Beleza</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">bella<span>glow.</span></a>
+    <nav aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#artigos">Artigos</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <span class="sobretitulo">SEU ESPAÇO DE BELEZA</span>
+        <h1>Realce a beleza que existe em <em>você.</em></h1>
+        <p>Dicas de skincare, maquiagem e autocuidado para inspirar sua rotina.</p>
+        <a class="botao" href="#artigos">Explorar o blog</a>
+      </div>
+      <img src="imagens/maquiagem.jpg" alt="Produtos de maquiagem e beleza">
+    </section>
+
+    <section class="conteudo" id="artigos">
+      <span class="sobretitulo">DESCUBRA SEU UNIVERSO</span>
+      <h2>Últimas inspirações</h2>
+      <div class="filtros" aria-label="Filtrar artigos">
+        <button class="filtro ativo" data-categoria="Todos">Todos</button>
+        <button class="filtro" data-categoria="Skincare">Skincare</button>
+        <button class="filtro" data-categoria="Maquiagem">Maquiagem</button>
+        <button class="filtro" data-categoria="Cabelos">Cabelos</button>
+      </div>
+      <input type="search" id="pesquisa" placeholder="Pesquisar artigos..." aria-label="Pesquisar artigos">
+      <div class="grade" id="lista-artigos"></div>
+      <p id="sem-resultados" hidden>Nenhum artigo encontrado.</p>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <span class="sobretitulo">BELEZA NA SUA CAIXA DE ENTRADA</span>
+      <h2>Seu momento glow ✨</h2>
+      <p>Receba dicas e novidades do nosso universo.</p>
+      <form id="form-newsletter">
+        <input type="email" id="email" placeholder="Seu melhor e-mail" required aria-label="Seu e-mail">
+        <button class="botao" type="submit">Inscrever</button>
+      </form>
+      <p id="mensagem-newsletter" role="status"></p>
+    </section>
+  </main>
+  <footer>bella glow. © 2026 · Beleza, cuidado e inspiração</footer>
+</body>
+</html>
